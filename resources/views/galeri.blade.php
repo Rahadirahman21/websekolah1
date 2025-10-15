@@ -11,17 +11,16 @@
                 </h1>
             </div>
         </div>
-        <div class="w-400  px-10 ms-40 ">
+        <div class="w-400 px-10 ms-40">
             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 mb-5 h-full">
-                @foreach ($galeri as $img)
+                @foreach ($galeri as $g)
                 <div>
                     <img class="object-cover object-center w-full h-100 max-w-full rounded-lg"
-                    src="{{ asset('storage/' . $img->foto) }}"
+                    src="{{ asset('storage/' . $g->foto) }}"
                     alt="gallery-photo" />
                     <div class="block mt-2 font-sans text-sm antialiased font-normal leading-normal text-center text-inherit">
-        Kegiatan Sekolah
-        
-      </div>
+                        {{ $g->nama_kegiatan }}
+                    </div>
                 </div>
                 @endforeach
                 
