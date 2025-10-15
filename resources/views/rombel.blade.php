@@ -25,9 +25,9 @@
                                 <p>Anggota Rombel : {{ $rombel->jml_perempuan + $rombel->jml_lakilaki }}</p>
                                 <p>Perempuan : {{ $rombel->jml_perempuan }}</p>
                                 <p>Laki - Laki : {{ $rombel->jml_lakilaki }}</p>
-                                <div class="card-actions justify-end">
+                                {{-- <div class="card-actions justify-end">
                                     <button class="btn btn-primary">Selengkapnya</button>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Beritas;
 use App\Models\Eskuls;
+use App\Models\Galeris;
 use App\Models\Guru;
 use App\Models\Identitas;
 use App\Models\Jurusans;
@@ -56,6 +57,13 @@ class UserController extends Controller
         $jurusan = Jurusans::all();
 
         return view('jurusan', compact('setting', 'jurusan'));
+    }
+    public function galeriIndex()
+    {
+        $setting = Settings::all();
+        $galeri = Galeris::all();
+
+        return view('galeri', compact('setting', 'galeri'));
     }
 
     public function rombelIndex()

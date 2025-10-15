@@ -15,7 +15,7 @@
                 <div class="relative w-96 md:w-1/4 my-10">
                     <span class="absolute top-2 left-2 w-full h-full bg-black shadow-2xl "></span>
                     <div
-                        class="relative bg-blue-100 w-full h-[400px] shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl border-2 border-gray-800 ">
+                        class="relative bg-blue-100 w-full h-[350px] shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl border-2 border-gray-800 ">
                         <figure>
                             <img src="{{ asset('storage/' . $jurusan->logo) }}" alt="" width="100px"
                                 class="bg-blue-100 rounded my-5 mx-auto">
@@ -23,9 +23,9 @@
                         <div class="card-body text-black">
                             <h2 class="card-title">{{ $jurusan->nama_jurusan }}</h2>
                             <p class="line-clamp-3">{{ $jurusan->pengertian }}</p>
-                            <div class="card-actions justify-end">
+                            {{-- <div class="card-actions justify-end">
                                 <button class="btn btn-primary">Selengkapnya</button>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

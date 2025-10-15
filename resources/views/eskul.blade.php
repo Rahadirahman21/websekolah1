@@ -25,9 +25,9 @@
                             <p class="text-sm mb-1">Jadwal: {{ $eskul->jadwal }}</p>
                             <p class=" text-sm mb-4">{{ Str::limit($eskul->detail, 80) }}</p>
 
-                            <div class="card-actions justify-end">
+                            {{-- <div class="card-actions justify-end">
                                 <button class="btn btn-primary">Selengkapnya</button>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>

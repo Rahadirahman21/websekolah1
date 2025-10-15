@@ -20,7 +20,7 @@ class RombelsForm
                         'Teknik Otomasi Industri' => 'Teknik Otomasi Industri',
                         'Desain Komunikasi Visual' => 'Desain Komunikasi Visual',
                     ]),
-                TextInput::make('nama_kelas'),
+                TextInput::make('nama_kelas')->unique(),
                 TextInput::make('jml_lakilaki'),
                 TextInput::make('jml_perempuan'),
             ]);
