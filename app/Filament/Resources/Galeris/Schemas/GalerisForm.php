@@ -4,6 +4,7 @@ namespace App\Filament\Resources\Galeris\Schemas;
 
 use Faker\Core\File;
 use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
 
 class GalerisForm
@@ -13,6 +14,7 @@ class GalerisForm
         return $schema
             ->components([
                 FileUpload::make("foto")->disk("public")->directory("foto"),
+                TextInput::make('nama_kegiatan'),
             ]);
     }
 }

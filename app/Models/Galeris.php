@@ -8,7 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Galeris extends Model
 {
     use HasFactory;
+
     protected $fillable = [
-        'foto'
+        'foto',
+        'nama_kegiatan',
     ];
 }
